@@ -1,3 +1,46 @@
-div {
+.logo {
 	border: 1px solid black;
+	float: left;
 }
+
+
+.aboutUs {
+	float: right;
+	padding-right: 10px;
+}
+
+.create {
+	float: right;
+	padding-right: 10px;
+}
+
+.search {
+	float: right;
+	padding-right: 10px;
+}
+
+.these {
+	border: 1px solid black;
+	width: 400px;
+	height: 400px;
+	text-align: center;
+}
+
+.this {
+	float: left;
+	margin-left: 225px;
+}
+
+
+
+.name {
+	font-size: 30px;
+}
+
+.that {
+	float: right;
+	margin-right: 225px;
+}
+
+
+
