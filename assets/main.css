@@ -1,5 +1,11 @@
+body {
+	background-color: rgb(210, 191, 191);
+}
+
 .logo {
-	border: 1px solid black;
+	border: 2px solid rgb(215, 95, 95);
+	padding: 5px;
+	border-radius: 10px;
 	float: left;
 }
 
@@ -7,23 +13,36 @@
 .aboutUs {
 	float: right;
 	padding-right: 10px;
+	padding: 5px;
+	border-radius: 10px;
+	border: 2px solid rgb(215, 95, 95);
+	margin-right: 5px;
 }
 
 .create {
 	float: right;
 	padding-right: 10px;
+	padding: 5px;
+	border-radius: 10px;
+	border: 2px solid rgb(215, 95, 95);
+	margin-right: 5px;
 }
 
 .search {
 	float: right;
 	padding-right: 10px;
+	padding: 5px;
+	border-radius: 10px;
+	border: 2px solid rgb(215, 95, 95);
+	margin-right: 5px;
 }
 
 .these {
-	border: 1px solid black;
-	width: 400px;
+	border: 2px solid rgb(215, 95, 95);
+	width: 375px;
 	height: 400px;
 	text-align: center;
+	border-radius: 20px;
 }
 
 .this {
