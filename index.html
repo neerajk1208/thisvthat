@@ -43,12 +43,14 @@ Center homepage
 		<div class="create tab"> Create </div>
 		<div class="search tab"> Search </div>
 		<br><br><br><br><br>
+
+
+		<div class="thisInfoBubble hide">
+				Donald is a real estate mogul and captures the Republican party.
+		</div>
 		<section class="this these"> 
 
 			<div class="name"> Trump </div>
-			<div class="thisInfoBubble">
-				Donald is a real estate mogul and captures the Republican party.
-			</div>
 			<div class="image"> </div>
 			<div class="%"> 60% </div>
 			<div class="popWords"> funny hello interesting </div>
@@ -59,9 +61,6 @@ Center homepage
 		</section>
 		<section class="that these">
 			<div class="name"> Clinton </div>
-			<div class="thisInfoBubble">
-				Hillary is a real estate mogul and captures the Democratic party.
-			</div>
 			<div class="image"> </div>
 			<div class="%"> 60% </div>
 			<div class="popWords"> funny hello interesting </div>
@@ -69,6 +68,36 @@ Center homepage
 			<div class="newComment"> New Comment </div>
 
 		</section>
+		<div class="thatInfoBubble hide">
+
+				Hillary is a real estate mogul and captures the Democratic party.
+		</div>
+
+		<script>
+			var thisBubble = document.querySelector(".thisInfoBubble");
+			
+			var thisBox = document.querySelector(".this");
+			
+			thisBox.addEventListener("mouseenter" ,function() {
+				thisBubble.className = "thisInfoBubble";
+			});
+			
+			thisBox.addEventListener("mouseleave", function() {
+				thisBubble.className="thisInfoBubble hide";
+			})	
+			
+			var thatBubble = document.querySelector(".thatInfoBubble");
+			
+			var thatBox = document.querySelector(".that");
+			
+			thatBox.addEventListener("mouseenter" ,function() {
+				thatBubble.className = "thatInfoBubble";
+			});
+			
+			thatBox.addEventListener("mouseleave", function() {
+				thatBubble.className="thatInfoBubble hide";
+			})	
+		</script>
 
 	</body>
 </html>
