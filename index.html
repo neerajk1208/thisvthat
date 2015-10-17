@@ -116,13 +116,30 @@ Center homepage
 			var latestComments = document.getElementsByClassName("latestComments");
 			var thisComment = latestComments[0];
 			var thatComment = latestComments[1];
+			var time = document.getElementsByClassName("time");
+			var thisTime = time[0];
+			var thatTime = time[1];
+
+
+
+			var x = new Date();
+			thisTime.innerHTML = x;
+			thatTime.innerHTML = x;
 
 			inputThis.addEventListener("blur", function() {
 				thisComment.innerHTML = inputThis.value;
+				inputThis.value = "";
+				var x = new Date();
+				thisTime.innerHTML = x;
+
+
 			})
 
 			inputThat.addEventListener("blur", function() {
 				thatComment.innerHTML = inputThat.value;
+				inputThat.value = "";
+				var x = new Date();
+				thatTime.innerHTML = x;
 			})
 
 		</script>
