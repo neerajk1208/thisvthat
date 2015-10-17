@@ -99,10 +99,37 @@ body {
 }
 
 .percent {
-	font-size: 50px;
+	font-size: 75px;
 	font-style: italic;
 }
 
+.popWords {
+	border: 2px solid gray;
+	padding: 4px;
+	margin: 2px;
+	font-size: 15px;
+	border-radius: 10px;
 
+}
+
+input {
+	width: 200px;
+	border-radius: 20px;
+	border: 3px solid gray;
+}
+
+input:hover {
+	background-color: gray;
+}
+
+.latestComments {
+	border: 2px solid gray;
+	width: 250px;
+	margin: 0px auto;
+}
+
+.time{
+	font-style: italic;
+}
 
 

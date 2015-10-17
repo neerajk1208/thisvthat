@@ -54,9 +54,15 @@ Center homepage
 			<div class="image"> <img src="assets/trumppic.png"/> </div>
 			<div class="percent"> 40% </div>
 
-			<div class="popWords"> funny hello interesting </div>
-			<div class="latestComments"> Welcome to the run </div>
-			<div class="newComment"> New Comment </div>
+			<span class="popWords"> funny </span>
+			<span class="popWords"> interesting </span>
+			<span class="popWords"> crude </span>
+			<br><br>
+			<span class="time"> 5 seconds ago </span>
+			<div class="latestComments"> Agh, that hair is so annoying!! </div>
+			<br><br>
+			<input class="newComment"> </input>
+
 
 
 		</section>
@@ -64,9 +70,14 @@ Center homepage
 			<div class="name"> Hillary Clinton </div>
 			<div class="image"> <img src="assets/clintonpic.png"/></div>
 			<div class="percent"> 60% </div>
-			<div class="popWords"> funny hello interesting </div>
-			<div class="latestComments"> Welcome to the run </div>
-			<div class="newComment"> New Comment </div>
+			<span class="popWords"> graceful </span>
+			<span class="popWords"> powerful </span>
+			<span class="popWords"> inconsistent </span>
+			<br><br>
+			<span class="time"> 5 seconds ago </span>
+			<div class="latestComments"> AHH CLINTON ROUND TWO! </div>
+			<br><br>
+			<input class="newComment"> </input>
 
 		</section>
 		<div class="thatInfoBubble hide">
@@ -97,7 +108,23 @@ Center homepage
 			
 			thatBox.addEventListener("mouseleave", function() {
 				thatBubble.className="thatInfoBubble hide";
-			})	
+			})
+
+			var inputs = document.getElementsByTagName("input");
+			var inputThis = inputs[0];
+			var inputThat = inputs[1];
+			var latestComments = document.getElementsByClassName("latestComments");
+			var thisComment = latestComments[0];
+			var thatComment = latestComments[1];
+
+			inputThis.addEventListener("blur", function() {
+				thisComment.innerHTML = inputThis.value;
+			})
+
+			inputThat.addEventListener("blur", function() {
+				thatComment.innerHTML = inputThat.value;
+			})
+
 		</script>
 
 	</body>
