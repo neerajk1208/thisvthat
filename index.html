@@ -42,7 +42,15 @@ Center homepage
 		<div class="aboutUs tab"> About Us </div>
 		<div class="create tab"> Create </div>
 		<div class="search tab"> Search </div>
-		<br><br><br><br><br>
+
+		<br><br>
+		<div class="fullTitle"> 
+			<div class="mainTitle one"> this </div>
+			<div class="mainTitle two"> V </div>
+			<div class="mainTitle three"> that </div>
+		</div>
+		<br><br><br>
+
 
 
 		<div class="thisInfoBubble hide">
@@ -119,6 +127,9 @@ Center homepage
 			var time = document.getElementsByClassName("time");
 			var thisTime = time[0];
 			var thatTime = time[1];
+			var words = document.getElementsByClassName("popWords");
+			var thisWord = [words[0], words[1], words[2]];
+			var thatWord = [words[3], words[4], words[5]];
 
 
 
@@ -128,6 +139,15 @@ Center homepage
 
 			inputThis.addEventListener("blur", function() {
 				thisComment.innerHTML = inputThis.value;
+
+				var string = inputThis.value.split(" ");
+				var newArray = [];
+				for (var i = 0; i<string.length; i++) {
+					newArray.push(string[i]);
+				}
+				thisWord[0].innerHTML = string[0];
+				thisWord[1].innerHTML = string[1] || thisWord[1].innerHTML;
+				thisWord[2].innerHTML = string[2] || "hello";
 				inputThis.value = "";
 				var x = new Date();
 				thisTime.innerHTML = x;
@@ -135,8 +155,18 @@ Center homepage
 
 			})
 
+
+
 			inputThat.addEventListener("blur", function() {
 				thatComment.innerHTML = inputThat.value;
+				var string = inputThat.value.split(" ");
+				var newArray = [];
+				for (var i = 0; i<string.length; i++) {
+					newArray.push(string[i]);
+				}
+				thatWord[0].innerHTML = string[0];
+				thatWord[1].innerHTML = string[1] || thisWord[1].innerHTML;
+				thatWord[2].innerHTML = string[2] || "hello";
 				inputThat.value = "";
 				var x = new Date();
 				thatTime.innerHTML = x;
