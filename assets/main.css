@@ -1,5 +1,6 @@
 body {
 	background-color: rgb(210, 191, 191);
+	
 }
 
 .logo {
@@ -40,6 +41,29 @@ body {
 	border-radius: 10px;
 	border: 2px solid rgb(215, 95, 95);
 	margin-right: 5px;
+}
+
+.fullTitle {
+	margin-left: 280px;
+}
+
+.mainTitle {
+	
+	text-align: center;
+	float: left;
+	margin-left: 150px;
+}
+
+.one {
+	font-size: 20px;
+}
+
+.two {
+	font-size: 40px;
+}
+
+.three {
+	font-size: 20px;
 }
 
 .these {
@@ -131,5 +155,12 @@ input:hover {
 .time{
 	font-style: italic;
 }
+
+/*
+
+Default message for input
+Upon click, clear default message
+Type
+Upon enter or blur, make that the new innerHTML for latestComments
 
 
