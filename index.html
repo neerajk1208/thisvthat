@@ -51,7 +51,9 @@ Center homepage
 		</div>
 		<br><br><br>
 
-
+		<div class="aboutUsParagraph hideParagraph">
+			This is a test project created by Neeraj Kohirkar, a future student at Hack Reactor. For more information regarding Neeraj's portfolio, please check out his github located at <a href="https://github.com/neerajk1208"> Neeraj's GitHub </a>. Thank you so much for your support!
+		</div>
 
 		<div class="thisInfoBubble hide">
 				Donald is a real estate mogul and captures the Republican party.
@@ -171,6 +173,17 @@ Center homepage
 				var x = new Date();
 				thatTime.innerHTML = x;
 			})
+			var columns = document.getElementsByClassName("these");
+			
+
+			var aboutUsTab = document.querySelector(".aboutUs");
+			var aboutUsDescription = document.querySelector(".aboutUsParagraph");
+			aboutUsTab.addEventListener("click", function() {
+				aboutUsDescription.className = "aboutUsParagraph";
+				columns[0].className = "this these hidden";
+				columns[1].className = "this these hidden";
+			});
+
 
 		</script>
 

@@ -1,6 +1,6 @@
 body {
 	background-color: rgb(210, 191, 191);
-	
+
 }
 
 .logo {
@@ -154,6 +154,22 @@ input:hover {
 
 .time{
 	font-style: italic;
+}
+
+.aboutUsParagraph{
+	font-style: italic;
+	text-align: center;
+	width: 500px;
+	margin: 0px auto;
+
+}
+
+.hideParagraph {
+	display: none;
+}
+
+.hidden {
+	display: none;
 }
 
 /*
