@@ -6,6 +6,7 @@
 body {
 	background-color: rgb(210, 191, 191);
 	font-family: "sf-text";
+	
 }
 
 .logo {
@@ -79,9 +80,9 @@ a {
 	border: 2px solid rgb(215, 95, 95);
 	text-align: center;
 	border-radius: 20px;
-	width: 280px;
-	margin-left: 40px;
-	margin-right: 40px;
+	width: 400px;
+	
+	margin-right: 10px;
 	height: 500px;
 }
 
