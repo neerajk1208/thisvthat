@@ -10,15 +10,15 @@ body {
 }
 
 .logo {
-	border: 2px solid rgb(215, 95, 95);
+	border: 1px solid rgb(215, 95, 95);
 	padding: 5px;
 	border-radius: 10px;
 	float: left;
 }
 
 .tab:hover {
-	background-color: rgb(121, 32, 32);
 	color: white;
+
 }
 
 
@@ -27,12 +27,17 @@ body {
 	padding-right: 10px;
 	padding: 5px;
 	border-radius: 10px;
-	border: 2px solid rgb(215, 95, 95);
+	border: 1px solid rgb(215, 95, 95);
 	margin-right: 5px;
 }
 
 a {
 	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	color: white;
 }
 
 .create {
@@ -40,7 +45,7 @@ a {
 	padding-right: 10px;
 	padding: 5px;
 	border-radius: 10px;
-	border: 2px solid rgb(215, 95, 95);
+	border: 1px solid rgb(215, 95, 95);
 	margin-right: 5px;
 }
 
@@ -49,13 +54,14 @@ a {
 	padding-right: 10px;
 	padding: 5px;
 	border-radius: 10px;
-	border: 2px solid rgb(215, 95, 95);
+	border: 1px solid rgb(215, 95, 95);
 	margin-right: 5px;
 }
 
 .fullTitle {
 	margin-left: 293px;
 	color: white;
+
 }
 
 .mainTitle {
@@ -79,7 +85,7 @@ a {
 }
 
 .these {
-	border: 2px solid rgb(215, 95, 95);
+	border: 1px solid rgb(215, 95, 95);
 	text-align: center;
 	border-radius: 20px;
 	width: 450px;
@@ -95,7 +101,8 @@ a {
 	float: left;
 	margin-left: 80px;
 	padding: 10px;
-	border-radius: 40px;
+	border-radius: 20px;
+	margin-right: 10px;
 }
 
 .this {
@@ -119,14 +126,11 @@ a {
 	float: left;
 }
 
-.these:hover {
-	background-color: rgb(121, 32, 32);
-	color: white;
-}
+
 
 .thatInfoBubble {
 	border: 1px solid black;
-	border-radius: 40px;
+	border-radius: 20px;
 	width: 75px;
 	padding: 10px;
 	text-align: center;
