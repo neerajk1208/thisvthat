@@ -4,7 +4,7 @@
 }
 
 body {
-	background-color: rgb(58, 87, 159);
+	background-color: rgb(91, 92, 93);
 	font-family: "sf-text";
 	
 }
@@ -111,13 +111,13 @@ a:hover {
 
 .image {
 	height: 170px;
-	opacity: 0.5;
+	opacity: 0.9;
 }
 
 .name {
 	font-size: 30px;
 	margin-bottom: 15px;
-	border-bottom: 2px solid black;
+	border-bottom: 1px solid black;
 	
 
 }
